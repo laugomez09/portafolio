@@ -7,8 +7,8 @@
   <title>Lautaro Gomez - Desarrollador Fullstack</title>
   <meta name="description"
     content="Portfolio de Lautaro Gomez, Desarrollador Fullstack especializado en frontend y backend con tecnologías modernas.">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="icon" type="image/png" href="assets/perfil.webp">
+  <link rel="stylesheet" href="/css/style.css">
+  <link rel="icon" type="image/png" href="/assets/perfil.webp">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/3d0d9a1b4c.js" crossorigin="anonymous"></script>
@@ -27,11 +27,9 @@
         <li><a href="#projects">Proyectos</a></li>
         <li><a href="#contact">Contacto</a></li>
       </ul>
-      <!-- Toggle Dark Mode -->
       <button id="themeToggle" class="theme-btn"><i class="fas fa-moon"></i></button>
     </nav>
   </header>
-
 
   <!-- Hero -->
   <main id="home" class="hero section">
@@ -48,14 +46,14 @@
   <!-- Sobre mí -->
   <section id="about" class="section">
     <div class="container grid-2">
-      <img src="public/img/WhatsApp Image 2025-09-12 at 21.13.58.jpeg" alt="Foto de Lautaro Gomez" class="profile-img">
+      <img src="./assets/WhatsApp Image 2025-09-12 at 21.13.58.jpeg" alt="Foto de Lautaro Gomez" class="profile-img">
       <div>
         <h2>Sobre mí</h2>
         <p>Soy un desarrollador Fullstack con sede en Buenos Aires. Me apasiona construir aplicaciones web modernas que
           combinan rendimiento, diseño y funcionalidad.</p>
         <p>Trabajo con tecnologías como <strong>JavaScript, Node.js, Express, MongoDB y React</strong>. También disfruto
           del diseño de interfaces y la optimización de experiencias de usuario.</p>
-        <a href="assets/CV_LautaroThomasGomezMuñoz.pdf" class="btn">Descargar CV</a>
+        <a href="/assets/cv.pdf" class="btn" target="_blank">Descargar CV</a>
       </div>
     </div>
   </section>
@@ -77,47 +75,45 @@
     </div>
   </section>
 
+  <!-- Proyectos -->
   <section id="projects" class="section">
-  <div class="container">
-    <h2>Proyectos</h2>
-    <div class="projects-grid">
+    <div class="container">
+      <h2>Proyectos</h2>
+      <div class="projects-grid">
 
-      <!-- Proyecto React (SegundoDesafio) -->
-      <article class="project-card">
-        <!--<img src="assets/proyecto-react.webp" alt="Proyecto React Frontend" loading="lazy">-->
-        <h3>Frontend React.js (Desafío)</h3>
-        <p>Desarrollo en React.js para desafío de Coderhouse. Incluye componentes, manejo de estado y rutas.</p>
-        <a href="https://github.com/laugomez09/SegundoDesafio" target="_blank">Ver en GitHub</a>
-      </article>
+        <!-- Proyecto React (SegundoDesafio) -->
+        <article class="project-card">
+          <h3>Frontend React.js (Desafío)</h3>
+          <p>Desarrollo en React.js para desafío de Coderhouse. Incluye componentes, manejo de estado y rutas.</p>
+          <a href="https://github.com/laugomez09/SegundoDesafio" target="_blank">Ver en GitHub</a>
+          <a href="https://segundo-desafio.vercel.app" target="_blank">Ver demo</a>
+        </article>
 
-      <!-- Proyecto PreEntrega3 -->
-      <article class="project-card">
-        <!--<img src="assets/proyecto-preentrega3.webp" alt="Proyecto PreEntrega3 Frontend" loading="lazy">-->
-        <h3>PreEntrega3 Frontend</h3>
-        <p>Proyecto frontend con HTML, CSS y SASS, realizado como entrega académica.</p>
-        <a href="https://github.com/laugomez09/PreEntrega3-gomez" target="_blank">Ver en GitHub</a>
-        <a href="https://pre-entrega3-gomez.vercel.app" target="_blank">Ver demo</a>
-      </article>
+        <!-- Proyecto PreEntrega3 -->
+        <article class="project-card">
+          <h3>PreEntrega3 Frontend</h3>
+          <p>Proyecto frontend con HTML, CSS y JS, realizado como entrega académica.</p>
+          <a href="https://github.com/laugomez09/PreEntrega3-gomez" target="_blank">Ver en GitHub</a>
+          <a href="https://pre-entrega3-gomez.vercel.app" target="_blank">Ver demo</a>
+        </article>
 
-      <!-- Proyecto Ecommerce Backend -->
-      <article class="project-card">
-        <!--<img src="assets/proyecto1.webp" alt="Ecommerce Backend" loading="lazy">-->
-        <h3>Ecommerce Backend</h3>
-        <p>Aplicación completa con autenticación JWT, gestión de usuarios y carrito de compras.</p>
-        <a href="https://github.com/laugomez09/Backend" target="_blank">Ver en GitHub</a>
-      </article>
+        <!-- Proyecto Ecommerce Backend -->
+        <article class="project-card">
+          <h3>Ecommerce Backend</h3>
+          <p>Aplicación completa con autenticación JWT, gestión de usuarios y carrito de compras.</p>
+          <a href="https://github.com/laugomez09/Backend" target="_blank">Ver en GitHub</a>
+        </article>
 
-      <!-- Proyecto API RESTful -->
-      <article class="project-card">
-        <!--<img src="assets/proyecto3.webp" alt="API RESTful" loading="lazy">-->
-        <h3>API RESTful</h3>
-        <p>API con Node.js y Express para gestionar productos y usuarios.</p>
-        <a href="https://github.com/laugomez09" target="_blank">Ver en GitHub</a>
-      </article>
+        <!-- Proyecto API RESTful -->
+        <article class="project-card">
+          <h3>API RESTful</h3>
+          <p>API con Node.js y Express para gestionar productos y usuarios.</p>
+          <a href="https://github.com/laugomez09" target="_blank">Ver en GitHub</a>
+        </article>
 
+      </div>
     </div>
-  </div>
-</section>
+  </section>
 
   <!-- Contacto -->
   <section id="contact" class="section">
@@ -127,15 +123,15 @@
         <p>¿Querés trabajar conmigo o tenés alguna consulta? ¡Escribime!</p>
         <ul>
           <li><i class="fas fa-envelope"></i> lautaro.gomez@mail.com</li>
-          <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lautarogomezmu%C3%B1oz/">LinkedIn</a>
-          </li>
+          <li><i class="fab fa-linkedin"></i> <a
+              href="https://www.linkedin.com/in/lautarogomezmu%C3%B1oz/">LinkedIn</a></li>
           <li><i class="fab fa-github"></i> <a href="https://github.com/laugomez09">GitHub</a></li>
         </ul>
       </div>
-      <form class="contact-form">
-        <input type="text" placeholder="Nombre" required>
-        <input type="email" placeholder="Email" required>
-        <textarea placeholder="Mensaje" required></textarea>
+      <form class="contact-form" action="https://formspree.io/f/YOUREMAILID" method="POST">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Mensaje" required></textarea>
         <button type="submit" class="btn">Enviar</button>
       </form>
     </div>
@@ -147,7 +143,7 @@
     <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="/script.js"></script>
 </body>
 
 </html>
