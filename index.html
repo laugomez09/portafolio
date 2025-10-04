@@ -118,28 +118,59 @@
   <!-- Contacto -->
   <section id="contact" class="section">
     <div class="container grid-2">
+      <!-- Información de contacto -->
       <div>
         <h2>Contacto</h2>
         <p>¿Querés trabajar conmigo o tenés alguna consulta? ¡Escribime!</p>
         <ul>
-          <li><i class="fas fa-envelope"></i> lautaro.gomez@mail.com</li>
-          <li><i class="fab fa-linkedin"></i> <a
-              href="https://www.linkedin.com/in/lautarogomezmu%C3%B1oz/">LinkedIn</a></li>
+          <li><i class="fas fa-envelope"></i> lautarotgomezm@gmail.com</li>
+          <li><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/lautarogomezmu%C3%B1oz/">LinkedIn</a>
+          </li>
           <li><i class="fab fa-github"></i> <a href="https://github.com/laugomez09">GitHub</a></li>
         </ul>
       </div>
-      <form class="contact-form" action="https://formspree.io/f/YOUREMAILID" method="POST">
+
+      <!-- Formulario con Formspree -->
+      <form class="contact-form" action="https://formspree.io/f/mayorlamente" method="POST">
         <input type="text" name="name" placeholder="Nombre" required>
         <input type="email" name="email" placeholder="Email" required>
         <textarea name="message" placeholder="Mensaje" required></textarea>
         <button type="submit" class="btn">Enviar</button>
+        <p class="form-message"></p>
       </form>
     </div>
   </section>
 
+  <script>
+    // Mostrar mensaje de confirmación sin recargar la página
+    const form = document.querySelector('.contact-form');
+    const formMessage = document.querySelector('.form-message');
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const formData = new FormData(form);
+
+      const response = await fetch(form.action, {
+        method: form.method,
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+
+      if (response.ok) {
+        formMessage.textContent = "Mensaje enviado correctamente. ¡Gracias!";
+        form.reset();
+      } else {
+        formMessage.textContent = "Hubo un error. Por favor, intentá nuevamente.";
+      }
+    });
+  </script>
+
+
   <!-- Footer -->
   <footer>
-    <p>© 2025 Lautaro Gomez. Todos los derechos reservados.</p>
+    <p> Lautaro Thomas Gomez Muñoz.</p>
     <button id="backToTop"><i class="fas fa-arrow-up"></i></button>
   </footer>
 
